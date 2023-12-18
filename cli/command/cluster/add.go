@@ -144,7 +144,7 @@ func checkTopology(curveadm *cli.CurveAdm, data string, options addOptions) erro
 }
 
 func checkAddOptions(cmd *cobra.Command) error {
-	deployType, err := cmd.Flags().GetString("deploy-type")
+	deployType, err := cmd.Flags().GetString("type")
 	if err != nil {
 		return err
 	}
